@@ -1,0 +1,21 @@
+{
+  "name": "amerta-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon main.js -e js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "discord.js-commando": "github:discordjs/Commando",
+    "eslint": "^7.18.0",
+    "mongoose": "^5.11.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
