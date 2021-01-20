@@ -8,7 +8,8 @@ module.exports = class ListMember extends Command {
             name: 'list',
             group: 'adminstrasi',
             memberName: 'list',
-            description: 'Search user by their faction!',
+            description: 'Mencari seluruh member berdasarkan faksi yang dimiliki.',
+            guildOnly: true
         });
     }
 
@@ -18,7 +19,6 @@ module.exports = class ListMember extends Command {
         }
         const argsNew = args[0].charAt(0).toUpperCase() + args.slice(1);
         const faksi = ("The " + argsNew);
-
         try {
             const users = await Member.find({faksi: faksi});
             console.log(faksi)
@@ -34,7 +34,7 @@ module.exports = class ListMember extends Command {
                     .setThumbnail(`https://amertanesia.com${imgURL}`)
                     .addFields({name: 'Username', value: user.username},{name: 'Status', value: status})
                     .setTimestamp()
-                message.channel.send(searchEmbed);
+                await message.channel.send(searchEmbed);
             }
         } catch (e) {
             console.log(e)

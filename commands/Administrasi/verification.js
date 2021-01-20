@@ -8,19 +8,24 @@ module.exports = class Verification extends Command {
             name: 'verif',
             group: 'adminstrasi',
             memberName: 'verification',
-            description: 'Verify user by username!',
+            description: 'Verifikasi user berdasarkan username.!',
+            args: [
+                {
+                    key: 'username',
+                    prompt: 'Masukan username member!',
+                    type: 'string',
+                },
+            ],
+            guildOnly: true
         });
     }
 
-    async run(message,args) {
-        if (!args.length) {
-            return message.channel.send(`Masukkan user yang ingin diverifikasi, ${message.author}!`);
-        }
+    async run(message, {username}) {
         try {
-            const user = await Member.findOne({username: args});
+            const user = await Member.findOne({username: username});
             if (user) {
                 const filter = {
-                    username: args
+                    username: username
                 }
                 const update = {
                     isActive: true,
@@ -31,11 +36,12 @@ module.exports = class Verification extends Command {
                     .setTitle(user.full_name)
                     .setURL(`https://amertanesia.com/member/${user.username}`)
                     .setAuthor(message.author.tag)
-                    .setDescription(`${user.username} is Active for now!`)
+                    .setDescription(`${user.username} sudah AKTIF. Jangan lupa untuk verif ketika member sudah selesai membuat plot kedatangan!a`)
+                    .addField('Username',username)
                     .setTimestamp()
-                message.reply(verifyEmbed);
+                await message.reply(verifyEmbed);
             } else {
-                message.reply("User not found. Insert correct username please!")
+                await message.reply("User not found. Insert correct username please!")
             }
         } catch (e) {
             console.log(e)

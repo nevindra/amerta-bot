@@ -28,6 +28,7 @@ client.registry
         ['keuangan', 'Keuangan Member'],
         ['keaktifan', 'Keaktifan Member'],
         ['adminstrasi', 'Adminstrasi Member'],
+        ['admin','Owner Only']
     ])
     .registerDefaultGroups()
     .registerDefaultCommands(

@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27be3998-1033-4ea6-a3a0-85cffbe68aed" name="Default Changelist" comment="" />
+    <list default="true" id="27be3998-1033-4ea6-a3a0-85cffbe68aed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/Administrasi/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Administrasi/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/Administrasi/not-verified.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Administrasi/not-verified.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/Administrasi/searchOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Administrasi/searchOne.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/Administrasi/slots.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Administrasi/slots.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/Administrasi/verification.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Administrasi/verification.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/Keaktifan/jobPlot.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Keaktifan/jobPlot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/Keaktifan/reset.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Keaktifan/reset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/Keaktifan/slplot.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Keaktifan/slplot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/Keuangan/apartemen.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Keuangan/apartemen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,13 +39,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="15.6.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.21" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/models" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -74,11 +93,29 @@
       <workItem from="1610938687673" duration="8652000" />
       <workItem from="1610952912203" duration="379000" />
       <workItem from="1610955778546" duration="7523000" />
-      <workItem from="1610974053419" duration="337000" />
+      <workItem from="1610974053419" duration="1002000" />
+      <workItem from="1611021376441" duration="833000" />
+      <workItem from="1611046582230" duration="4000" />
+      <workItem from="1611069912465" duration="839000" />
+      <workItem from="1611107133390" duration="62000" />
+      <workItem from="1611107977614" duration="2313000" />
+      <workItem from="1611111362268" duration="2429000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

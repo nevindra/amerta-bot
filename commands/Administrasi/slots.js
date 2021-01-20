@@ -8,11 +8,12 @@ module.exports = class Slots extends Command {
             name: 'slots',
             group: 'adminstrasi',
             memberName: 'slots',
-            description: 'Know slots available',
+            description: 'Mengetahui berapa banyak slot yang sudah terisi.',
+            guildOnly: true
         });
     }
 
-    async run(message, args) {
+    async run(message) {
         try {
             const users = await Member.find();
             let sum = 0;
@@ -35,10 +36,10 @@ module.exports = class Slots extends Command {
                     {name: 'The Order', value: order},
                     {name: 'The Opportunist', value: oportunist},
                     {name: 'The Rhapsody', value: rhapsody},
-                    {name: 'The Opportunist', value: impartial}
+                    {name: 'The Impartial', value: impartial}
                     )
                 .setTimestamp()
-            message.channel.send(searchEmbed);
+            await message.channel.send(searchEmbed);
         } catch (e) {
             console.log(e)
         }

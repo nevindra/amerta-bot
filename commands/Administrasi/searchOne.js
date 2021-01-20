@@ -8,7 +8,8 @@ module.exports = class SearchOne extends Command {
             name: 'search',
             group: 'adminstrasi',
             memberName: 'search',
-            description: 'Search user by username!',
+            description: 'Mencari member berdasarkan ',
+            guildOnly: true
         });
     }
 

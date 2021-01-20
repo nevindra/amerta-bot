@@ -8,20 +8,25 @@ module.exports = class SL extends Command {
             name: 'plotsl',
             group: 'keaktifan',
             memberName: 'plotsl',
-            description: 'Change SL plot status!',
+            description: 'Mengubah status plot pekerjaan member.',
+            guildOnly: true,
+            args: [
+                {
+                    key: 'username',
+                    prompt: 'Masukan username member!',
+                    type: 'string',
+                },
+            ],
         });
     }
 
-    async run(message,args) {
-        if (!args.length) {
-            return message.channel.send(`Masukan user yang status plot bulannya ingin kamu ubah, ${message.author}!`);
-        }
+    async run(message, {username}) {
         try {
-            const user = await Member.findOne({username: args});
+            const user = await Member.findOne({username: username});
             if (user) {
                 if (user.isActive === true) {
                     const filter = {
-                        username: args
+                        username: username
                     }
                     const update = {
                         isEventAttend: true,
@@ -33,14 +38,15 @@ module.exports = class SL extends Command {
                         .setURL(`https://amertanesia.com/member/${user.username}`)
                         .setAuthor(message.author.tag)
                         .setDescription(`Status, ${user.username} sudah dirubah menjadi TELAH MENGERJAKAN PLOT SL. `)
+                        .addField('Username',username)
                         .setTimestamp()
-                    message.reply(moneyEmbed);
+                    await message.reply(moneyEmbed);
                 } else {
-                    message.channel.send(`User ${user.full_name} tidak aktif, silahkan aktivasi user tersebut.`)
+                    await message.channel.send(`User ${user.full_name} tidak aktif, silahkan aktivasi user tersebut.`)
                 }
 
             } else {
-                message.reply("User not found. Insert correct username please!")
+                await message.reply("User not found. Insert correct username please!")
             }
         } catch (e) {
             console.log(e)

@@ -9,6 +9,7 @@ module.exports = class ChangeApartemen extends Command {
             group: 'keuangan',
             memberName: 'apartemen',
             description: 'Change member status from apartemen owner to house owner!',
+            guildOnly: true,
             args: [
                 {
                     key: 'username',
@@ -38,10 +39,11 @@ module.exports = class ChangeApartemen extends Command {
                         .setURL(`https://amertanesia.com/member/${user.username}`)
                         .setAuthor(message.author.tag)
                         .setDescription(`${user.username} berpindah dari apartemen menjadi rumah kelas 1!`)
+                        .addField('Username',username)
                         .setTimestamp()
-                    message.reply(moneyEmbed);
+                    await message.reply(moneyEmbed);
                 } else {
-                    message.channel.send(`User ${user.full_name} tidak aktif, silahkan aktivasi user tersebut.`)
+                    await message.channel.send(`User ${user.full_name} tidak aktif, silahkan aktivasi user tersebut.`)
                 }
             } else {
                 message.reply("User not found. Insert correct username please!")

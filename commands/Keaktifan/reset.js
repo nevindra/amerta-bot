@@ -8,13 +8,13 @@ module.exports = class MeowCommand extends Command {
             name: 'reset',
             group: 'keaktifan',
             memberName: 'reset',
-            description: 'Reset plot job and plot SL for all members.',
+            description: 'Melakukan reset untuk status plot pekerjaan dan plot sl.',
+            guildOnly: true,
         });
     }
 
-    async run(message, args) {
+    async run(message) {
         let users = await Member.find();
-
         for (let user of users) {
             const filter = {username: user.username}
             const update = {

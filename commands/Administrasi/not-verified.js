@@ -8,7 +8,8 @@ module.exports = class NotVerified extends Command {
             name: 'notverif',
             group: 'adminstrasi',
             memberName: 'notverif',
-            description: 'Search user who',
+            description: 'Mencari member yang belum terverifikasi.',
+            guildOnly: true
         });
     }
 
