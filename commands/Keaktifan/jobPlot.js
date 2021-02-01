@@ -24,7 +24,7 @@ module.exports = class JobPlot extends Command {
         try {
             const user = await Member.findOne({username: username});
             if (user) {
-                if (user.isActive === true) {
+                if (user.isActive === true && user.isPlotJob === false) {
                     const filter = {
                         username: username
                     }
@@ -38,10 +38,13 @@ module.exports = class JobPlot extends Command {
                         .setURL(`https://amertanesia.com/member/${user.username}`)
                         .setAuthor(message.author.tag)
                         .setDescription(`Status, ${user.username} sudah dirubah menjadi TELAH MENGERJAKAN PLOT JOB. `)
-                        .addField('Username',username)
+                        .addField('Username', username)
                         .setTimestamp()
                     await message.reply(moneyEmbed);
-                } else {
+                } else if (user.isPlotJob === true) {
+                    await message.channel.send(`User ${user.full_name} sudah membuat plot job!`)
+
+                } else if (user.isActive === false) {
                     await message.channel.send(`User ${user.full_name} tidak aktif, silahkan aktivasi user tersebut.`)
                 }
 

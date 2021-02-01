@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27be3998-1033-4ea6-a3a0-85cffbe68aed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="27be3998-1033-4ea6-a3a0-85cffbe68aed" name="Default Changelist" comment="update with more commando commands">
+      <change afterPath="$PROJECT_DIR$/commands/Keuangan/audit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/Administrasi/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Administrasi/list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/Administrasi/not-verified.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Administrasi/not-verified.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/Administrasi/searchOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Administrasi/searchOne.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/Administrasi/slots.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Administrasi/slots.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/Administrasi/verification.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Administrasi/verification.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/Keaktifan/jobPlot.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Keaktifan/jobPlot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/Keaktifan/reset.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Keaktifan/reset.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/Keaktifan/slplot.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Keaktifan/slplot.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commands/Keuangan/apartemen.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Keuangan/apartemen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/Keuangan/backup-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Keuangan/backup-user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/Keuangan/changeMoney.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Keuangan/changeMoney.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,8 +95,19 @@
       <workItem from="1611069912465" duration="839000" />
       <workItem from="1611107133390" duration="62000" />
       <workItem from="1611107977614" duration="2313000" />
-      <workItem from="1611111362268" duration="2429000" />
+      <workItem from="1611111362268" duration="2689000" />
+      <workItem from="1611115307026" duration="84000" />
+      <workItem from="1611987621475" duration="29000" />
+      <workItem from="1612157639299" duration="4386000" />
     </task>
+    <task id="LOCAL-00001" summary="update with more commando commands">
+      <created>1611115078376</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611115078376</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,5 +124,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update with more commando commands" />
+    <option name="LAST_COMMIT_MESSAGE" value="update with more commando commands" />
   </component>
 </project>

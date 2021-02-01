@@ -44,12 +44,12 @@ module.exports = class ChangeMoney extends Command {
                         .setAuthor(message.author.tag)
                         .setDescription(`${user.username} memiliki uang sebesar ${user.kekayaan} lalu berubah menjadi ${kekayaan}!`)
                         .setTimestamp()
-                    message.reply(moneyEmbed);
+                    await message.reply(moneyEmbed);
                 } else {
-                    message.channel.send(`User ${user.full_name} tidak aktif, silahkan aktivasi user tersebut.`)
+                    await message.channel.send(`User ${user.full_name} tidak aktif, silahkan aktivasi user tersebut.`)
                 }
             } else {
-                message.reply("User not found. Insert correct username please!")
+                await message.reply("User not found. Insert correct username please!")
             }
         } catch (e) {
             console.log(e)
