@@ -1,36 +1,30 @@
 const Member = require('../../models/member');
+const Backup = require('../../models/backup');
 const Discord = require('discord.js');
 const {Command} = require('discord.js-commando');
 
 module.exports = class MeowCommand extends Command {
     constructor(client) {
         super(client, {
-            name: 'audit',
+            name: 'rebackup',
             group: 'keuangan',
-            memberName: 'audit',
-            description: 'Melakukan audit kepada seluruh user!',
+            memberName: 'rebackup',
+            description: 'Rebackup all stats of users',
         });
     }
 
     async run(message, args) {
         try {
-            let users = await Member.find();
-            let user;
-            for (user of users) {
-                let HARTA_USER = user.kekayaan;
-                const PAJAK_USER = (user.kekayaan > 3000 ? 0.05 : 0.1)
-                let AUDIT_USER = Number(HARTA_USER) * PAJAK_USER;
-                const TAMBAHAN = (user.isEventAttend === true ? 75 : 0);
-                let kekayaanNew = (HARTA_USER - AUDIT_USER) + TAMBAHAN;
-                const RESULT = Math.ceil(kekayaanNew)
-                const filter = {
-                    username: user.username
-                }
+            let backups = await Backup.find()
+
+            for (let user of backups) {
+                const filter = {username: user.username}
                 const update = {
-                    kekayaan: RESULT
+                    kekayaan: user.kekayaan,
                 }
                 await Member.findOneAndUpdate(filter, update, ({useFindAndModify: false, new: true}));
             }
+
             const verifyEmbed = await new Discord.MessageEmbed()
                 .setColor('#0099ff')
                 .setTitle("Bot sudah melakukan backup.")
@@ -41,6 +35,5 @@ module.exports = class MeowCommand extends Command {
         } catch (e) {
             console.log(e)
         }
-
     }
-}
+};

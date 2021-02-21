@@ -24,20 +24,16 @@ module.exports = class Verification extends Command {
         try {
             const user = await Member.findOne({username: username});
             if (user) {
-                const filter = {
-                    username: username
-                }
-                const update = {
-                    isActive: true,
-                }
+                const filter = {username: username}
+                const update = {isActive: true}
                 await Member.findOneAndUpdate(filter, update, ({useFindAndModify: false, new: true}));
                 const verifyEmbed = await new Discord.MessageEmbed()
                     .setColor('#0099ff')
                     .setTitle(user.full_name)
                     .setURL(`https://amertanesia.com/member/${user.username}`)
                     .setAuthor(message.author.tag)
-                    .setDescription(`${user.username} sudah AKTIF. Jangan lupa untuk verif ketika member sudah selesai membuat plot kedatangan!a`)
-                    .addField('Username',username)
+                    .setDescription(`${user.username} sudah AKTIF. Jangan lupa untuk verif ketika member sudah selesai membuat plot kedatangan!`)
+                    .addField('Username', username)
                     .setTimestamp()
                 await message.reply(verifyEmbed);
             } else {

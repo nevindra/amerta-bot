@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27be3998-1033-4ea6-a3a0-85cffbe68aed" name="Default Changelist" comment="update with more commando commands">
-      <change afterPath="$PROJECT_DIR$/commands/Keuangan/audit.js" afterDir="false" />
+    <list default="true" id="27be3998-1033-4ea6-a3a0-85cffbe68aed" name="Default Changelist" comment="major update">
+      <change afterPath="$PROJECT_DIR$/commands/Administrasi/delete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commands/Keuangan/calculate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commands/Keuangan/re-backup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/Administrasi/not-verified.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Administrasi/not-verified.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/Keaktifan/jobPlot.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Keaktifan/jobPlot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/Keaktifan/slplot.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Keaktifan/slplot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/Keuangan/apartemen.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Keuangan/apartemen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/Keuangan/backup-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Keuangan/backup-user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/Keuangan/changeMoney.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Keuangan/changeMoney.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/Administrasi/verification.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Administrasi/verification.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/Keaktifan/slplot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/Keuangan/audit.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Keuangan/audit.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +46,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/models" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -55,8 +54,8 @@
       <recent name="A:\NodeJS\amerta-bot\models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="A:\NodeJS\amerta-bot\commands\Keuangan" />
       <recent name="A:\NodeJS\amerta-bot\commands\Administrasi" />
+      <recent name="A:\NodeJS\amerta-bot\commands\Keuangan" />
       <recent name="A:\NodeJS\amerta-bot\commands\Keaktifan" />
     </key>
   </component>
@@ -98,7 +97,14 @@
       <workItem from="1611111362268" duration="2689000" />
       <workItem from="1611115307026" duration="84000" />
       <workItem from="1611987621475" duration="29000" />
-      <workItem from="1612157639299" duration="4386000" />
+      <workItem from="1612157639299" duration="5517000" />
+      <workItem from="1612185081101" duration="159000" />
+      <workItem from="1612699815027" duration="146000" />
+      <workItem from="1612891259153" duration="1982000" />
+      <workItem from="1613623868719" duration="180000" />
+      <workItem from="1613791173616" duration="2418000" />
+      <workItem from="1613801315092" duration="1984000" />
+      <workItem from="1613925870929" duration="2243000" />
     </task>
     <task id="LOCAL-00001" summary="update with more commando commands">
       <created>1611115078376</created>
@@ -107,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611115078376</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="major update">
+      <created>1612162288845</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1612162288845</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +140,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update with more commando commands" />
-    <option name="LAST_COMMIT_MESSAGE" value="update with more commando commands" />
+    <MESSAGE value="major update" />
+    <option name="LAST_COMMIT_MESSAGE" value="major update" />
   </component>
 </project>
