@@ -37,7 +37,7 @@ module.exports = class MeowCommand extends Command {
         }
 
         const deleteUserEmbed = await new Discord.MessageEmbed()
-            .setColor('#0099ff')
+            .setColor('#02121')
             .setTitle("Bot sudah melakukan perintah.")
             .setAuthor(message.author.tag)
             .setDescription(`User ${username} sudah dihapus dari database.`)

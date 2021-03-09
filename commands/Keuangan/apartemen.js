@@ -43,7 +43,7 @@ module.exports = class ChangeApartemen extends Command {
                     .setTitle(user.full_name)
                     .setURL(`https://amertanesia.com/member/${user.username}`)
                     .setAuthor(message.author.tag)
-                    .setDescription(`${user.username} berpindah dari apartemen menjadi rumah kelas 1!`)
+                    .setDescription(`${user.username} berpindah dari apartemen menjadi rumah kelas ${tingkat}!`)
                     .addField('Username', username)
                     .setTimestamp()
                 await message.reply(moneyEmbed);
