@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27be3998-1033-4ea6-a3a0-85cffbe68aed" name="Default Changelist" comment="major update">
-      <change afterPath="$PROJECT_DIR$/commands/Administrasi/delete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commands/Keuangan/calculate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commands/Keuangan/re-backup.js" afterDir="false" />
+    <list default="true" id="27be3998-1033-4ea6-a3a0-85cffbe68aed" name="Default Changelist" comment="add calculate, delete and rebackup. edit verification, audit and delete slplot.js">
+      <change afterPath="$PROJECT_DIR$/commands/Keuangan/excel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/googleSheetsService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/Administrasi/verification.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Administrasi/verification.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/Keaktifan/slplot.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/Keuangan/audit.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Keuangan/audit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/Administrasi/delete.js" beforeDir="false" afterPath="$PROJECT_DIR$/commands/Administrasi/delete.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="15.6.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.21" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
@@ -51,9 +51,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="A:\NodeJS\amerta-bot" />
       <recent name="A:\NodeJS\amerta-bot\models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="A:\NodeJS\amerta-bot" />
       <recent name="A:\NodeJS\amerta-bot\commands\Administrasi" />
       <recent name="A:\NodeJS\amerta-bot\commands\Keuangan" />
       <recent name="A:\NodeJS\amerta-bot\commands\Keaktifan" />
@@ -104,7 +106,14 @@
       <workItem from="1613623868719" duration="180000" />
       <workItem from="1613791173616" duration="2418000" />
       <workItem from="1613801315092" duration="1984000" />
-      <workItem from="1613925870929" duration="2243000" />
+      <workItem from="1613925870929" duration="2969000" />
+      <workItem from="1614007056210" duration="1609000" />
+      <workItem from="1614093036473" duration="49000" />
+      <workItem from="1614704659094" duration="1197000" />
+      <workItem from="1615972035217" duration="53000" />
+      <workItem from="1616729689971" duration="7392000" />
+      <workItem from="1616856101854" duration="4000" />
+      <workItem from="1617598605677" duration="5967000" />
     </task>
     <task id="LOCAL-00001" summary="update with more commando commands">
       <created>1611115078376</created>
@@ -120,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612162288845</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add calculate, delete and rebackup. edit verification, audit and delete slplot.js">
+      <created>1613928237592</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613928237592</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +157,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update with more commando commands" />
     <MESSAGE value="major update" />
-    <option name="LAST_COMMIT_MESSAGE" value="major update" />
+    <MESSAGE value="add calculate, delete and rebackup. edit verification, audit and delete slplot.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="add calculate, delete and rebackup. edit verification, audit and delete slplot.js" />
   </component>
 </project>

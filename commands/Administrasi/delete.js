@@ -26,10 +26,16 @@ module.exports = class MeowCommand extends Command {
 
         const profile = await Member.findOne({username: username})
         const backup = await Backup.findOne({username: username})
-
         try {
             const slot = await Slot.findOne({name: profile.faksi});
-            slot.slots += 1;
+            const sisa_slot = slot.slots + 1;
+            const filter = {
+                name: profile.faksi
+            }
+            const update = {
+                slots: sisa_slot
+            }
+            await Slot.findOneAndUpdate(filter, update, ({useFindAndModify: false, new: true}));
             if (profile) await Member.deleteOne({username: username})
             if (backup) await Backup.deleteOne({username: username})
         } catch (e) {
@@ -37,7 +43,7 @@ module.exports = class MeowCommand extends Command {
         }
 
         const deleteUserEmbed = await new Discord.MessageEmbed()
-            .setColor('#0099ff')
+            .setColor('#e26e15')
             .setTitle("Bot sudah melakukan perintah.")
             .setAuthor(message.author.tag)
             .setDescription(`User ${username} sudah dihapus dari database.`)
