@@ -2,7 +2,7 @@ const path = require('path');
 const { PREFIX, TOKEN, DATABASE, OWNER } = require('./config/config.json');
 const mongoose = require('mongoose');
 const { CommandoClient } = require('discord.js-commando');
-require('dotenv').config()
+
 
 const client = new CommandoClient({
     commandPrefix: PREFIX,
