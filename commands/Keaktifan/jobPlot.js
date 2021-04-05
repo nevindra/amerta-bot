@@ -5,7 +5,7 @@ const {Command} = require('discord.js-commando');
 module.exports = class JobPlot extends Command {
     constructor(client) {
         super(client, {
-            name: 'plotjob',
+            name: 'plotsl',
             group: 'keaktifan',
             memberName: 'plotjob',
             description: 'Mengubah status plot pekerjaan member.',
@@ -29,7 +29,7 @@ module.exports = class JobPlot extends Command {
                         username: username
                     }
                     const update = {
-                        isPlotJob: true,
+                        isEventAttend: true,
                     }
                     await Member.findOneAndUpdate(filter, update, ({useFindAndModify: false, new: true}));
                     const moneyEmbed = await new Discord.MessageEmbed()

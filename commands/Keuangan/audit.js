@@ -19,8 +19,8 @@ module.exports = class MeowCommand extends Command {
             for (user of users) {
                 let HARTA_USER = user.kekayaan;
                 const PAJAK_USER = (user.kekayaan > 3000 ? 0.05 : 0.1)
-                let AUDIT_USER = Number(HARTA_USER) * PAJAK_USER;
                 const TAMBAHAN = (user.isEventAttend === true ? 75 : 0);
+                let AUDIT_USER = Number(HARTA_USER) * PAJAK_USER;
                 let kekayaanNew = (HARTA_USER - AUDIT_USER) + TAMBAHAN;
                 const RESULT = Math.ceil(kekayaanNew)
                 const filter = {
@@ -33,7 +33,7 @@ module.exports = class MeowCommand extends Command {
             }
             const verifyEmbed = await new Discord.MessageEmbed()
                 .setColor('#0099ff')
-                .setTitle("Bot sudah melakukan backup.")
+                .setTitle("Bot sudah melakukan audit.")
                 .setAuthor(message.author.tag)
                 .setDescription(`Terima kasih sudah menggunakan layanan Amerta Bot! :)`)
                 .setTimestamp()
